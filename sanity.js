@@ -11,4 +11,8 @@ const client=SanityClient({
 const builder=imageUrlBuilder(client);
 export const urlFor=(source)=> builder.image(source);
 
+//RUN THIS to add exception for local host 3000 CORS policy
+//access villaVeryBackend
+//https://villaveryapp.sanity.studio/
+
 export default client;

@@ -55,6 +55,9 @@ export default function HomeScreen() {
 
   return (
     <SafeAreaView className='pt-5'>
+  
+
+     
       <View className='flex-row pb-3 items-center mx-4 space-x-2'>
             <Image
               source={{
@@ -116,6 +119,8 @@ export default function HomeScreen() {
 
 
       </ScrollView>
+
+     
 
     </SafeAreaView>
   )
