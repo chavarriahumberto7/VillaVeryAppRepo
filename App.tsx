@@ -3,7 +3,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { View , Image, Text, TouchableOpacity} from 'react-native';
 
 import { NavigationContainer } from '@react-navigation/native';
-import {HomeScreen, RestaurantScreen,BasketScreen} from './src/screens'
+import {HomeScreen, RestaurantScreen,BasketScreen,PreparingOrderScreen} from './src/screens'
 import { Provider } from 'react-redux';
 import { store } from './store';
 
@@ -25,6 +25,14 @@ function MyStack() {
         presentation:'modal',
         headerShown:false,
       }}
+      />
+      <Stack.Screen name="PreparingOrderScreen" component={PreparingOrderScreen} 
+      options={
+        {
+          presentation:'modal',
+          headerShown:false
+        }
+      }
       />
      
     </Stack.Navigator>
